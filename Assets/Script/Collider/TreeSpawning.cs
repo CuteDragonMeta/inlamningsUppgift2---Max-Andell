@@ -8,6 +8,8 @@ using UnityEngine.PlayerLoop;
 
 public class SpawnScript : MonoBehaviour
 {
+    [SerializeField] GameObject Road;
+
     public GameObject treePrefab;
     public int NumberOfTrees;
     public float CollisionCheckRadius;
@@ -21,13 +23,14 @@ public class SpawnScript : MonoBehaviour
             for( int i = 0; i < Amount; i++){
             int x = UnityEngine.Random.Range(1,5);
 
-            Vector3 SpawnPoint = new Vector3(UnityEngine.Random.Range(-250,250),0.5f, UnityEngine.Random.Range(-200,300));
+            Vector3 SpawnPoint = new Vector3(UnityEngine.Random.Range(-250,250),0.5f, UnityEngine.Random.Range(-250,250));
 
                 if (FindCollisions(SpawnPoint) < 2){
                     GameObject c = (GameObject)Instantiate(item, SpawnPoint, Quaternion.identity);  
-                    c.transform.localScale = new Vector3(5,5,5);
+                    c.transform.localScale = new Vector3(8,8,8);
             }
             }
+            Road.SetActive(false);
         }
     private int FindCollisions(Vector3 pos){
         Collider[] hits = Physics.OverlapSphere(pos, CollisionCheckRadius);   
