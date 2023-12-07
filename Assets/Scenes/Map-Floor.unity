@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -465,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253449082}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -164.61, y: 0, z: -244.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -519,7 +519,7 @@ Transform:
   - {fileID: 391570102}
   - {fileID: 1512895664}
   - {fileID: 1912160096}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1114095219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260239081
 GameObject:
@@ -2027,6 +2027,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11, y: 1, z: 33.55211}
   m_Center: {x: 0, y: 0, z: 11.776054}
+--- !u!1 &1114095218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1114095219}
+  m_Layer: 0
+  m_Name: TrailWalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1114095219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114095218}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1758268588}
+  - {fileID: 253449083}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115939750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,12 +3779,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758268584}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1114095219}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1758268589
 MonoBehaviour:
@@ -3766,8 +3799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Road: {fileID: 253449082}
-  treePrefab: {fileID: 9007408297397324535, guid: dc583eb6eecb1ce43be3f6a84772aa51, type: 3}
-  NumberOfTrees: 1000
+  treePrefab: {fileID: 3618795058166311696, guid: cc16693f44ddf7b46a0f5f582daa46dc, type: 3}
+  NumberOfTrees: 200
   CollisionCheckRadius: 2
 --- !u!1 &1912160095
 GameObject:
@@ -4813,7 +4846,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1752443357}
-  - {fileID: 1758268588}
-  - {fileID: 618091585}
   - {fileID: 1271861106}
-  - {fileID: 253449083}
+  - {fileID: 618091585}
+  - {fileID: 1114095219}

@@ -21,13 +21,13 @@ public class SpawnScript : MonoBehaviour
     private void CreateObject(GameObject item, int Amount) {
 
             for( int i = 0; i < Amount; i++){
-            int x = UnityEngine.Random.Range(1,5);
+            int x = UnityEngine.Random.Range(5,8);
 
             Vector3 SpawnPoint = new Vector3(UnityEngine.Random.Range(-250,250),0.5f, UnityEngine.Random.Range(-250,250));
 
                 if (FindCollisions(SpawnPoint) < 2){
                     GameObject c = (GameObject)Instantiate(item, SpawnPoint, Quaternion.identity);  
-                    c.transform.localScale = new Vector3(8,8,8);
+                    c.transform.localScale = new Vector3(x,x,x);
             }
             }
             Road.SetActive(false);
