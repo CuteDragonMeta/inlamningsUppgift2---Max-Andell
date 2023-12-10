@@ -727,7 +727,7 @@ Transform:
   m_GameObject: {fileID: 331894752}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 677.3, y: 11.77, z: 211.3}
+  m_LocalPosition: {x: 1.6599731, y: 11.77, z: 1378.23}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2181,7 +2181,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Road: {fileID: 253449082}
   treePrefab: {fileID: 3618795058166311696, guid: cc16693f44ddf7b46a0f5f582daa46dc, type: 3}
+  RockPrefab: {fileID: 7316618379562662854, guid: 39d0a15deac0a794e802d83713e86024, type: 3}
+  Flower1Prefab: {fileID: 6790492165088344816, guid: a620afd0f970b5d41a1c9398ef276fd4, type: 3}
+  Flower2Prefab: {fileID: 4867889463058203156, guid: f550c80a288252347bddcb7465dc52df, type: 3}
+  Mushroom1Prefab: {fileID: 1799145172504711529, guid: 18af26af61ee8234caa44dc89f89d5cf, type: 3}
+  Mushroom2Prefab: {fileID: 4028192324028746158, guid: f9ba43b4d4d826f47aa990da47cf55a1, type: 3}
+  Stick1Prefab: {fileID: 4451941183071688819, guid: 006e392d17557b045b1e173abb80f1e8, type: 3}
+  Stick2Prefab: {fileID: 2982408054991540482, guid: fdd3446cc2b63d44fb714ae3ca931241, type: 3}
   NumberOfTrees: 300
+  NumberOfFoliage: 15
+  NumberSticks: 10
   CollisionCheckRadius: 2
 --- !u!1 &1115939750
 GameObject:
@@ -2827,7 +2836,7 @@ Transform:
   m_GameObject: {fileID: 1310314585}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 672.64, y: 12.056, z: 201.07}
+  m_LocalPosition: {x: -3, y: 12.056, z: 1368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

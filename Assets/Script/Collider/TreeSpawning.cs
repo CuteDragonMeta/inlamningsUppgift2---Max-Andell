@@ -11,14 +11,32 @@ public class SpawnScript : MonoBehaviour
     [SerializeField] GameObject Road;
 
     public GameObject treePrefab;
+    public GameObject RockPrefab;
+    public GameObject Flower1Prefab;
+    public GameObject Flower2Prefab;
+    public GameObject Mushroom1Prefab;
+    public GameObject Mushroom2Prefab;
+    public GameObject Stick1Prefab;
+    public GameObject Stick2Prefab;
+
     public int NumberOfTrees;
+    public int NumberOfFoliage;
+    public int NumberSticks;
     public float CollisionCheckRadius;
 
     void Start()
     {
         CreateObject(treePrefab, NumberOfTrees);
-    }
+        CreateObject(RockPrefab, NumberOfFoliage);
+        CreateObject(Flower1Prefab, NumberOfFoliage);
+        CreateObject(Flower2Prefab, NumberOfFoliage);
+        CreateObject(Mushroom1Prefab, NumberOfFoliage);
+        CreateObject(Mushroom2Prefab, NumberOfFoliage);
+        CreateObject(Stick1Prefab, NumberSticks);
+        CreateObject(Stick2Prefab, NumberSticks);
+        }
     private void CreateObject(GameObject item, int Amount) {
+            int VarientSpawn = 0;
 
             for( int i = 0; i < Amount; i++){
             int x = UnityEngine.Random.Range(5,8);
@@ -30,7 +48,11 @@ public class SpawnScript : MonoBehaviour
                     c.transform.localScale = new Vector3(x,x,x);
             }
             }
-            Road.SetActive(false);
+
+         int v = VarientSpawn +1;
+            if(v >= 8){
+                Road.SetActive(false);
+            }
         }
     private int FindCollisions(Vector3 pos){
         Collider[] hits = Physics.OverlapSphere(pos, CollisionCheckRadius);   
