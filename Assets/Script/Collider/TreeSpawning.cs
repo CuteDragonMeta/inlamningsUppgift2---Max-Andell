@@ -16,12 +16,10 @@ public class SpawnScript : MonoBehaviour
     public GameObject Flower2Prefab;
     public GameObject Mushroom1Prefab;
     public GameObject Mushroom2Prefab;
-    public GameObject Stick1Prefab;
-    public GameObject Stick2Prefab;
+
 
     public int NumberOfTrees;
     public int NumberOfFoliage;
-    public int NumberSticks;
     public float CollisionCheckRadius;
 
     void Start()
@@ -32,8 +30,7 @@ public class SpawnScript : MonoBehaviour
         CreateObject(Flower2Prefab, NumberOfFoliage);
         CreateObject(Mushroom1Prefab, NumberOfFoliage);
         CreateObject(Mushroom2Prefab, NumberOfFoliage);
-        CreateObject(Stick1Prefab, NumberSticks);
-        CreateObject(Stick2Prefab, NumberSticks);
+
         }
     private void CreateObject(GameObject item, int Amount) {
             int VarientSpawn = 0;
@@ -50,7 +47,7 @@ public class SpawnScript : MonoBehaviour
             }
 
          int v = VarientSpawn +1;
-            if(v >= 8){
+            if(v >= 6){
                 Road.SetActive(false);
             }
         }
