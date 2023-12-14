@@ -30,7 +30,6 @@ public class FlowerControll : MonoBehaviour
         source = gameObject.AddComponent<AudioSource>();
         // Get button and Position
         mainFlower = transform.GetChild(0).gameObject;
-        print(button);
     }
 
      void Update(){
