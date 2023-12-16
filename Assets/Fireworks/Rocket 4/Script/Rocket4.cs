@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Rocket4 : MonoBehaviour
 {
-
+    bool lit =false;
     public Rigidbody rig;
     public ConstantForce cf;
     public Transform IsKinematic;
 
-    IEnumerator Start()
+    IEnumerator Fire()
 
     {
         //Wait for 3 secs.
@@ -23,4 +23,12 @@ public class Rocket4 : MonoBehaviour
 
 
     }
+
+    void Update()
+    {
+        if(lit == true){
+            StartCoroutine(Fire());
+        }
+    }
+    
 }

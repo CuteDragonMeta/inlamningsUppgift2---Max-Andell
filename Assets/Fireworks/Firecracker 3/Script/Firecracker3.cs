@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Firecracker3 : MonoBehaviour {
-
+    bool lit=false;
     public Rigidbody rig;
     public ConstantForce cf;
     public Transform IsKinematic;
 
-    IEnumerator Start()
+    IEnumerator Fire()
 
     {
         //Wait for 3 secs.
@@ -19,7 +19,12 @@ public class Firecracker3 : MonoBehaviour {
 
         rig.isKinematic = true;
         cf.enabled = false;
+    }
 
-
+    void Update()
+    {
+        if(lit == true){
+            StartCoroutine(Fire());
+        }
     }
 }
