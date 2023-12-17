@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4874250320546854}
   - component: {fileID: 82714388578843904}
   - component: {fileID: 114342555040242770}
+  - component: {fileID: -291807996107033014}
   m_Layer: 0
   m_Name: Firecracker 3
   m_TagString: Untagged
@@ -114,10 +115,9 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 9026032488762864922}
   - {fileID: 4289375485760786}
   - {fileID: 4318774373372152}
-  - {fileID: 4460556970424412}
-  - {fileID: 4576353457428748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!82 &82714388578843904
@@ -231,6 +231,27 @@ MonoBehaviour:
   rig: {fileID: 0}
   cf: {fileID: 0}
   IsKinematic: {fileID: 0}
+--- !u!65 &-291807996107033014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462156804631834}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.20167723, y: 0.23302364, z: 1.3424324}
+  m_Center: {x: 0.013771746, y: 0.034998894, z: -0.008670162}
 --- !u!1 &1490152688965366
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,12 +278,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490152688965366}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 56.90803, y: -4.299521, z: 89.2501}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4874250320546854}
+  m_Father: {fileID: 9026032488762864922}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198685838081232112
 ParticleSystem:
@@ -4980,7 +5001,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 43899b13d8946d048a034f9a36745db1, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5060,12 +5080,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625122762976042}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.9}
-  m_LocalScale: {x: 0.79999995, y: 0.8, z: 0.8000003}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 56.90803, y: -4.299521, z: 89.4751}
+  m_LocalScale: {x: 0.19999999, y: 0.2, z: 0.20000008}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4874250320546854}
+  m_Father: {fileID: 9026032488762864922}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198246919005219924
 ParticleSystem:
@@ -10001,3 +10021,36 @@ MonoBehaviour:
   rig: {fileID: 0}
   cf: {fileID: 0}
   IsKinematic: {fileID: 0}
+--- !u!1 &5315864722371112071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9026032488762864922}
+  m_Layer: 0
+  m_Name: ParticleActivete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9026032488762864922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315864722371112071}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 227.63213, y: 17.198084, z: 357.0004}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4460556970424412}
+  - {fileID: 4576353457428748}
+  m_Father: {fileID: 4874250320546854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

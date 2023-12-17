@@ -4801,9 +4801,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096110944625790}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: -0.32919025, y: 0.020479202, z: -0.12490084}
+  m_LocalScale: {x: 1, y: 1.9875565, z: 1.3545055}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4521568150053630}
@@ -4815,7 +4815,7 @@ Transform:
   - {fileID: 4682368101208364}
   - {fileID: 4994196158766968}
   - {fileID: 4397245617495776}
-  m_Father: {fileID: 4765096656854854}
+  m_Father: {fileID: 4531462129880730375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198056339640775494
 ParticleSystem:
@@ -9571,6 +9571,7 @@ GameObject:
   - component: {fileID: 54966297327598456}
   - component: {fileID: 75461939023559764}
   - component: {fileID: 114131326525563466}
+  - component: {fileID: 3596851019958072938}
   - component: {fileID: 82294708064190674}
   m_Layer: 0
   m_Name: Rocket 2
@@ -9593,9 +9594,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4896350592449754}
-  - {fileID: 4589881913517524}
-  - {fileID: 4304621186737512}
-  - {fileID: 4402637839813916}
+  - {fileID: 4531462129880730375}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &54966297327598456
@@ -9652,6 +9651,27 @@ MonoBehaviour:
   rig: {fileID: 54966297327598456}
   cf: {fileID: 75461939023559764}
   IsKinematic: {fileID: 0}
+--- !u!65 &3596851019958072938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208484534624178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.11656284, y: 2.0128956, z: 0.107484154}
+  m_Center: {x: 0.018753052, y: 0.0951882, z: -0.00040709192}
 --- !u!82 &82294708064190674
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47974,14 +47994,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649261881814624}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: -0.32919025, y: 0.020479202, z: -0.12490084}
+  m_LocalScale: {x: 1, y: 1.9875565, z: 1.3545055}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4387423852566822}
   - {fileID: 4153203667454176}
-  m_Father: {fileID: 4765096656854854}
+  m_Father: {fileID: 4531462129880730375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198474011902710188
 ParticleSystem:
@@ -57527,7 +57547,7 @@ Transform:
   m_GameObject: {fileID: 1854193711002782}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57609,12 +57629,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949704484628692}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.033, y: 0.967, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.32919025, y: 0.053479195, z: -1.4347076}
+  m_LocalScale: {x: 1, y: 1.9875565, z: 1.3545058}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4765096656854854}
+  m_Father: {fileID: 4531462129880730375}
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
 --- !u!198 &198178410700450952
 ParticleSystem:
@@ -67151,3 +67171,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &8288304547240051788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4531462129880730375}
+  m_Layer: 0
+  m_Name: ParticleActivete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4531462129880730375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8288304547240051788}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: -0.020479202, y: -0.092211366, z: -0.16562562}
+  m_LocalScale: {x: 0.5031304, y: 1, z: 0.7382767}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4589881913517524}
+  - {fileID: 4304621186737512}
+  - {fileID: 4402637839813916}
+  m_Father: {fileID: 4765096656854854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

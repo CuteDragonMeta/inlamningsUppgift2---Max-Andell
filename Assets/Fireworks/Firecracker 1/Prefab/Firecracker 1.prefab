@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4500272831240984}
   - component: {fileID: 82641927844228756}
   - component: {fileID: 114767220025469394}
+  - component: {fileID: 4616873803810522339}
   m_Layer: 0
   m_Name: Firecracker 1
   m_TagString: Untagged
@@ -31,10 +32,9 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6998072608469276033}
   - {fileID: 4927003412588760}
   - {fileID: 4456888782384016}
-  - {fileID: 4780345738333444}
-  - {fileID: 4611062089025982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!82 &82641927844228756
@@ -148,6 +148,27 @@ MonoBehaviour:
   rig: {fileID: 0}
   cf: {fileID: 0}
   IsKinematic: {fileID: 0}
+--- !u!65 &4616873803810522339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307619146351330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15, y: 0.26, z: 0.45}
+  m_Center: {x: -0.02, y: 0.03, z: -0.04}
 --- !u!1 &1330114122236066
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,12 +348,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680746530577454}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: 57.90803, y: -4.296521, z: 89.2501}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4500272831240984}
+  m_Father: {fileID: 6998072608469276033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &198653617508192242
 ParticleSystem:
@@ -5050,7 +5071,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 43899b13d8946d048a034f9a36745db1, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5130,12 +5150,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930213513958042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99924093, z: 0.038956206, w: 0}
-  m_LocalPosition: {x: 0, y: 0.0016, z: -0.2582}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0, y: -0.038956206, z: -0.99924093, w: 0}
+  m_LocalPosition: {x: 57.90803, y: -4.2973213, z: 89.379196}
+  m_LocalScale: {x: 0.25, y: 0.24999997, z: 0.25000003}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4500272831240984}
+  m_Father: {fileID: 6998072608469276033}
   m_LocalEulerAnglesHint: {x: 175.535, y: -0.000015258789, z: 180}
 --- !u!198 &198800429644204198
 ParticleSystem:
@@ -10001,3 +10021,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6124042148779868196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6998072608469276033}
+  m_Layer: 0
+  m_Name: ParticleActivete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6998072608469276033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124042148779868196}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -115.81606, y: -8.593042, z: 178.5002}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4780345738333444}
+  - {fileID: 4611062089025982}
+  m_Father: {fileID: 4500272831240984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
