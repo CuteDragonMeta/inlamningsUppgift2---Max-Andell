@@ -5,14 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Jimmy's Trail/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
     path: Assets/Jimmy's Trail/Scenes/CampSite.unity
     guid: 96f912bb3ba873640af0182c08b50905
   - enabled: 1
-    path: Assets/Jimmy's Trail/Scenes/Map-Floor.unity
+    path: Assets/Jimmy's Trail/Scenes/Forest.unity
     guid: 8988fdc6ee6d06f42a8e4e9589210edc
   - enabled: 1
     path: Assets/Jimmy's Trail/Scenes/RiverScene.unity
