@@ -30,10 +30,9 @@ public class SpawnScript : MonoBehaviour
         CreateObject(Flower2Prefab, NumberOfFoliage);
         CreateObject(Mushroom1Prefab, NumberOfFoliage);
         CreateObject(Mushroom2Prefab, NumberOfFoliage);
-
+        Destroy(Road, 0);
         }
     private void CreateObject(GameObject item, int Amount) {
-            int VarientSpawn = 0;
 
             for( int i = 0; i < Amount; i++){
             int x = UnityEngine.Random.Range(3,5);
@@ -46,10 +45,6 @@ public class SpawnScript : MonoBehaviour
             }
             }
 
-         int v = VarientSpawn +1;
-            if(v >= 4){
-                Road.SetActive(false);
-            }
         }
     private int FindCollisions(Vector3 pos){
         Collider[] hits = Physics.OverlapSphere(pos, CollisionCheckRadius);   
