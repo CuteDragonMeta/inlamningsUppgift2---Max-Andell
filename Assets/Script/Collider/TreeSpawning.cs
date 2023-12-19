@@ -36,7 +36,7 @@ public class SpawnScript : MonoBehaviour
             int VarientSpawn = 0;
 
             for( int i = 0; i < Amount; i++){
-            int x = UnityEngine.Random.Range(5,8);
+            int x = UnityEngine.Random.Range(3,5);
 
             Vector3 SpawnPoint = new Vector3(UnityEngine.Random.Range(-250,250),0.5f, UnityEngine.Random.Range(-250,250));
 
@@ -47,7 +47,7 @@ public class SpawnScript : MonoBehaviour
             }
 
          int v = VarientSpawn +1;
-            if(v >= 6){
+            if(v >= 4){
                 Road.SetActive(false);
             }
         }
