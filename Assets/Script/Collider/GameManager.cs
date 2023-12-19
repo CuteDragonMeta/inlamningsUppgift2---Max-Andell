@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public void ChangeScene(){
             if(Portal.CompareTag("Forest"))
             {
-                SceneManager.LoadScene("Map-Floor");
+                SceneManager.LoadScene("Forest");
             } else if(Portal.CompareTag("River"))
             {
                 SceneManager.LoadScene("RiverScene");

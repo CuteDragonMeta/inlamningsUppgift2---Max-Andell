@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 47975597}
   - component: {fileID: 47975596}
   - component: {fileID: 47975595}
+  - component: {fileID: 47975599}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -911,6 +912,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 860159563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47975599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47975594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ce5cd06b0b7124a98f70945df6d1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Road: {fileID: 2147353271}
+  treePrefab: {fileID: 3618795058166311696, guid: cc16693f44ddf7b46a0f5f582daa46dc, type: 3}
+  RockPrefab: {fileID: 8596733969405851719, guid: 122c2235e9bde2941aa46937698ce4a6, type: 3}
+  Flower1Prefab: {fileID: 3068801572827238613, guid: eb027d38027a0474f9ac33e96dc2db19, type: 3}
+  Flower2Prefab: {fileID: 4867889463058203156, guid: f550c80a288252347bddcb7465dc52df, type: 3}
+  Mushroom1Prefab: {fileID: 3585696103644926157, guid: c4e981a1c971f6242b943d74ed0d8a65, type: 3}
+  Mushroom2Prefab: {fileID: 4028192324028746158, guid: f9ba43b4d4d826f47aa990da47cf55a1, type: 3}
+  NumberOfTrees: 200
+  NumberOfFoliage: 25
+  CollisionCheckRadius: 2
 --- !u!1001 &54781327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12445,7 +12468,7 @@ Transform:
   m_GameObject: {fileID: 860159562}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.9, y: 0, z: 224.9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17696,7 +17719,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 33af9cddc42e7d648b81a520e7424107, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17707,7 +17730,7 @@ AudioSource:
   MinDistance: 82.10886
   MaxDistance: 503.16992
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -17715,23 +17738,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.16318315
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -6.130534
+      outSlope: -6.130534
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.26922977
+      value: 0.37895203
+      inSlope: -1.5326335
+      outSlope: -1.5326335
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5170057
+      value: 0.039474487
+      inSlope: -0.3831584
+      outSlope: -0.3831584
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.010549486
+      inSlope: -0.16324818
+      outSlope: -0.16324818
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -21677,7 +21718,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 500
   MaxDistance: 500
